@@ -1,0 +1,264 @@
+body {
+    background-image: url("/img/5570.jpg");
+    font-family: distant_galaxyregular;
+}
+.main_logo{
+    height: 180px;
+    width: 700px;
+    margin: 0 auto;
+}
+.main_logo>div{
+    float: left;
+}
+.main-logo__notification {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 18px;
+    color: cornflowerblue;
+}
+.logo {
+    height: 170px;
+    width: 350px;
+    background-image: url("/img/star_wars_logo_1.png");
+    background-size: 350px auto;
+    margin:auto;
+
+}
+.img_chewbacca{
+    height: 150px;
+    width: 150px;
+    background-image: url("/img/chewbacca.png");
+    background-size:150px auto;
+}
+.img_yoda {
+    height: 150px;
+    width: 150px;
+    background-image: url("/img/yoda.png");
+    background-size: 150px auto;
+}
+#personages {
+    color: white;
+    margin: 0 0 0 50px;
+}
+#personages div[class^="results"]{
+    margin:30px 0 0 0;
+}
+#personages div[class^="content"] div.img {
+    height: 140px;
+    width: 140px;
+    background-size: 140px auto;
+    /*cursor: pointer;*/
+}
+#personages div.content1 .img_death_star {
+    background-image: url("/img/death-star-1st-icon.png");
+    border-radius: 70px;
+}
+#personages div.content2 .img_darth_vader {
+    background-image: url("/img/darth_vader.png");
+    border-radius: 40px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 60%;
+}
+#personages div.content3 .img_luke_skywalker {
+    background-image: url("/img/luke_skywalker.png");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 120px;
+}
+#personages div.content4 .img_r2d2 {
+     background-image: url("/img/r2_d2.png");
+     border-radius: 60px;
+}
+#personages div.content5 .img_obi_van {
+    background-image: url("/img/obi-wan.png");
+    width: 120px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 50px;
+
+}
+.results1 {
+    padding: 0 30px;
+}
+.results2{
+    padding: 0 25px;
+}
+.results3 {
+    padding: 0 10px;
+}
+.results4 {
+    padding: 0 50px;
+}
+.results5 {
+    padding: 0 15px;
+}
+#personages div[class^="content"]>div.cl>div[class^="oval"]{
+    height: 60px;
+    background: white;
+    -moz-border-radius: 150px / 10px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 180px / 100px;
+    position: absolute;
+    left: 180px;
+    z-index: 1;
+}
+#personages div[class^="content"]>div.cl>[class^="oval"]>p{
+    color: black;
+    padding: 0 10px;
+    font-family: monospacetypewriterregular;
+}
+.oval1 {
+    top: 200px;
+    width:300px;
+}
+.oval2{
+    top: 367px;
+    width:180px;
+}
+.oval3{
+    top: 563px;
+    width:200px;
+}
+.oval4{
+    top: 752px;
+    width:100px;
+}
+.oval5{
+    top: 968px;
+    width: 300px;
+}
+#personages div[class^="content"]>div.cl>[class^="triangle"]{
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-right: 47px solid white;
+    border-bottom: 21px solid transparent;
+    position: absolute;
+    left: 170px;
+    transform: rotate(71deg);
+}
+.triangle1 {
+    top: 219px;
+}
+.triangle2 {
+    top: 386px;
+}
+.triangle3 {
+    top: 582px;
+}
+.triangle4 {
+    top: 771px;
+}
+.triangle5 {
+    top: 987px;
+}
+#personages div.content1 div.cloud1{
+    visibility:hidden;
+    opacity:0;
+    transition:all 1s;
+}
+#personages div.content1 .img_death_star:hover ~ .cloud1{
+    visibility:visible;
+    opacity:1;
+}
+#personages div.content2 div.cloud2{
+    visibility:hidden;
+    opacity:0;
+    transition:all 1s;
+}
+#personages div.content2 .img_darth_vader:hover ~ .cloud2{
+    visibility:visible;
+    opacity:1;
+}
+#personages div.content3 div.cloud3{
+    visibility:hidden;
+    opacity:0;
+    transition:all 1s;
+}
+#personages div.content3 .img_luke_skywalker:hover ~ .cloud3{
+    visibility:visible;
+    opacity:1;
+}
+#personages div.content4 div.cloud4{
+    visibility:hidden;
+    opacity:0;
+    transition:all 1s;
+}
+#personages div.content4 .img_r2d2:hover ~ .cloud4{
+    visibility:visible;
+    opacity:1;
+}
+#personages div.content5 div.cloud5{
+    visibility:hidden;
+    opacity:0;
+    transition:all 1s;
+}
+#personages div.content5 .img_obi_van:hover ~ .cloud5{
+    visibility:visible;
+    opacity:1;
+}
+.qwe {
+    transform:scale(1.3);
+    opacity:0.9;
+    cursor:pointer;
+}
+#personages div[class^="content"] div[class^="checkbox"]{
+     font-size: 20px;
+     left: 400px;
+    position: absolute;
+ }
+#personages div.content1 div.checkbox1 {
+    top: 350px;
+}
+#personages div.content2 div.checkbox2 {
+    top: 500px;
+}
+#personages div.content3 div.checkbox3 {
+    top: 690px;
+
+}
+#personages div.content4 div.checkbox4 {
+    top: 870px;
+
+}
+#personages div.content5 div.checkbox5 {
+    top: 1060px;
+}
+body #ch1:checked + label {
+    transform:rotate(360deg);
+    transition-duration:1200ms;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    color: green;
+}
+body #ch2:checked + label {
+    transform:rotate(360deg);
+    transition-duration:1200ms;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    color: green;
+}
+body #ch3:checked + label {
+    transform:rotate(360deg);
+    transition-duration:1200ms;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    color: green;
+}
+body #ch4:checked + label {
+    transform:rotate(360deg);
+    transition-duration:1200ms;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    color: green;
+}
+body #ch5:checked + label {
+    transform:rotate(360deg);
+    transition-duration:1200ms;
+    transition-timing-function: ease-out;
+    display: inline-block;
+    color: green;
+}
