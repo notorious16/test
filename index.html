@@ -122,7 +122,6 @@
             }
         });
         // Working with Cookie
-        // функция устанавливающая куки, хранящие состояния checkbox'ов
         function cookieFromCheckbox()
         {
             var ch = [];
@@ -133,7 +132,6 @@
             });
             Cookies.set("checkboxCookie", ch.join(","));
         }
-// функция восстанавливающая состояния checkbox'ов по кукам
         function checkboxFromCookie()
         {
             if(Cookies("checkboxCookie") == '' || null || undefined)
@@ -143,9 +141,6 @@
                 $("#" + chMap[i]).prop("checked", true);
             }
         }
-
-// проверим, были ли установлены ранее кукисы с именем checkboxCookie.
-// если нет - установим их.
         var checkboxCookie = Cookies("checkboxCookie");
         if(checkboxCookie == '' || null || undefined)
         {
