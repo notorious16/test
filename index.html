@@ -134,7 +134,7 @@
         }
         function checkboxFromCookie()
         {
-            if(Cookies("checkboxCookie") == '' || null || undefined)
+            if(Cookies("checkboxCookie") == ''  || Cookies("checkboxCookie") == undefined)
                 return;
             var chMap = Cookies("checkboxCookie").split(",");
             for (var i in chMap){
@@ -142,7 +142,7 @@
             }
         }
         var checkboxCookie = Cookies("checkboxCookie");
-        if(checkboxCookie == '' || null || undefined)
+        if(checkboxCookie == '' || checkboxCookie == undefined)
         {
             cookieFromCheckbox();
             checkboxCookie = Cookies("checkboxCookie");
